@@ -179,6 +179,9 @@ footer .right .two {
   flex-direction: column;
   gap: 1rem;
 }
+h5{
+  font-size: 1rem;
+}
 .end {
   color: whitesmoke;
   display: flex;
