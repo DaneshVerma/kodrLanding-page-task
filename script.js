@@ -1,4 +1,3 @@
-
 gsap.from("h1", {
   opacity: 0,
   y: 50,
@@ -15,7 +14,6 @@ gsap.from("nav span", {
   ease: "back.out(1.7)",
 });
 
-
 gsap.from(".second .container", {
   scrollTrigger: {
     trigger: ".second",
@@ -26,7 +24,6 @@ gsap.from(".second .container", {
   duration: 1,
   ease: "power3.out",
 });
-
 
 gsap.from(".products h2", {
   scrollTrigger: {
@@ -39,16 +36,16 @@ gsap.from(".products h2", {
   ease: "power2.out",
 });
 
-// Product cards stagger
 gsap.from(".products .card", {
   scrollTrigger: {
     trigger: ".products .container",
     start: "top 80%",
+    toggleActions: "play reverse play reverse",
   },
   opacity: 0,
   y: 100,
   duration: 1,
-  stagger: 0.3,
+  stagger: 0.1,
   ease: "power2.out",
 });
 
@@ -56,6 +53,7 @@ gsap.from(".shop-btn", {
   scrollTrigger: {
     trigger: ".shop-btn",
     start: "top 90%",
+    toggleActions: "play reverse play reverse",
   },
   opacity: 0,
   scale: 0.8,
@@ -63,11 +61,11 @@ gsap.from(".shop-btn", {
   ease: "back.out(1.7)",
 });
 
-
 gsap.from(".four", {
   scrollTrigger: {
     trigger: ".four",
     start: "top 80%",
+    toggleActions: "play reverse play reverse",
   },
   opacity: 0,
   y: 50,
@@ -75,24 +73,24 @@ gsap.from(".four", {
   ease: "power2.out",
 });
 
-gsap.from("footer .left h4, footer .right h4", {
+gsap.from("footer .left h5, footer .right h5", {
   scrollTrigger: {
     trigger: "footer",
     start: "top 85%",
-      toggleActions: "play reverse play reverse"
+    toggleActions: "play reverse play reverse",
   },
   opacity: 0,
   y: 40,
-  duration: 0.8,
-  stagger: 0.2,
+  duration: 0.5,
+  stagger: 0.1,
   ease: "power2.out",
 });
-
 
 gsap.from(".end", {
   scrollTrigger: {
     trigger: ".end",
-    start: "top 90%",
+    start: "top %",
+    toggleActions: "play reverse play reverse",
   },
   opacity: 0,
   y: 60,
